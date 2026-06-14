@@ -36,6 +36,85 @@
     </div>
 
 </header>
+
+<!-- MAIN -->
+<main class="container mx-auto flex-grow p-6">
+
+    <section class="bg-[rgb(156,156,156)] rounded-xl shadow-md p-8">
+
+        <!-- PAGE HEADING FIX -->
+        <header class="mb-6">
+
+            <h2 class="text-xl font-bold text-[rgb(255,208,0)]">
+                Contact Me
+            </h2>
+
+            <p class="text-black">
+                Send a message using the form below. All fields are validated using JavaScript.
+            </p>
+
+        </header>
+
+        <!-- CONTACT FORM -->
+        <section aria-label="Contact form section">
+
+            <form id="contact-form" class="space-y-4">
+
+                <!-- NAME -->
+                <div>
+                    <label for="name" class="block text-black mb-1">
+                        Name
+                    </label>
+
+                    <input type="text"
+                           id="name"
+                           class="w-full p-2 border rounded text-black"
+                           placeholder="Enter your name">
+                </div>
+
+                <!-- EMAIL -->
+                <div>
+                    <label for="email" class="block text-black mb-1">
+                        Email
+                    </label>
+
+                    <input type="email"
+                           id="email"
+                           class="w-full p-2 border rounded text-black"
+                           placeholder="Enter your email">
+                </div>
+
+                <!-- MESSAGE -->
+                <div>
+                    <label for="message" class="block text-black mb-1">
+                        Message
+                    </label>
+
+                    <textarea id="message"
+                              class="w-full p-2 border rounded text-black"
+                              rows="5"
+                              placeholder="Write your message"></textarea>
+                </div>
+
+                <!-- BUTTON -->
+                <div>
+                    <button type="submit"
+                            class="bg-[rgb(179,0,0)] text-white px-4 py-2 rounded hover:bg-[rgb(129,0,0)]">
+                        Send Message
+                    </button>
+                </div>
+
+                <!-- OUTPUT -->
+                <div id="form-output" class="text-black font-semibold"></div>
+
+            </form>
+
+        </section>
+
+    </section>
+
+</main>
+
 <!-- FOOTER -->
 <footer class="bg-[rgb(56,56,56)] text-white mt-auto">
 
