@@ -35,6 +35,106 @@
     </div>
 
 </header>
+
+<!-- MAIN -->
+<main class="container mx-auto flex-grow p-6">
+
+<article class="bg-[rgb(156,156,156)] text-black rounded-xl shadow-md p-8">
+
+    <!-- PAGE HEADER -->
+    <header class="mb-6">
+
+        <h2 class="text-xl font-bold text-[rgb(255,208,0)]">
+            Sample Project – Ninja API
+        </h2>
+
+        <p>
+            This page demonstrates JavaScript API integration using the API Ninjas password generator.
+        </p>
+
+    </header>
+
+    <!-- API SECTION -->
+    <section class="mb-6">
+
+        <h3 class="font-bold text-lg mb-4">
+            Password Generator Tool
+        </h3>
+
+        <form class="ninja-api-form">
+
+            <!-- INPUT -->
+            <fieldset class="mb-4">
+
+                <legend class="font-bold mb-2">
+                    Settings
+                </legend>
+
+                <label for="input-password-length" class="block mb-2">
+                    Password Length
+                </label>
+
+                <input
+                    type="text"
+                    id="input-password-length"
+                    placeholder="Enter password length"
+                    class="border p-2 w-full"
+                >
+
+            </fieldset>
+
+            <!-- BUTTON -->
+            <fieldset class="mb-4">
+
+                <legend class="font-bold mb-2">
+                    Action
+                </legend>
+
+                <button
+                    id="button-api-caller"
+                    type="button"
+                    class="bg-[rgb(179,0,0)] text-white px-4 py-2 rounded hover:bg-[rgb(129,0,0)]"
+                >
+                    Generate Password
+                </button>
+
+            </fieldset>
+
+            <!-- OUTPUT -->
+            <fieldset class="api-response-area">
+
+                <legend class="font-bold mb-2">
+                    Result
+                </legend>
+
+                <section id="api-output-section" class="active">
+                    <p id="api-output-area"></p>
+                </section>
+
+            </fieldset>
+
+        </form>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section>
+
+        <h3 class="font-bold text-lg mb-2">
+            About This Feature
+        </h3>
+
+        <p>
+            This tool uses a JavaScript fetch request to retrieve a randomly generated password
+            from an external API and displays it dynamically on the page.
+        </p>
+
+    </section>
+
+</article>
+
+</main>
+
 <!-- FOOTER -->
 <footer class="bg-[rgb(56,56,56)] text-white mt-auto">
 
