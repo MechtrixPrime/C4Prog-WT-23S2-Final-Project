@@ -52,6 +52,19 @@ project-folder/
 └── src/
 ```
 
+## Colour Scheme
+
+| Name                 | RGB             | HEX      |
+|----------------------|-----------------|----------|
+| black                | 0, 0, 0         | #000000  |
+| white                | 255, 255, 255   | #FFFFFF  |
+| Accent Yellow        | 255, 208, 0     | #FFD000  |
+| Dark Red             | 129, 0, 0       | #810000  |
+| Accent Red           | 179, 0, 0       | #B30000  |
+| Medium Grey          | 182, 182, 182   | #B6B6B6  |
+| Dark Header Grey     | 56, 56, 56      | #383838  |
+| Dark Grey            | 109, 109, 109   | #6D6D6D  |
+
 ## Features
 
 * Responsive navigation
