@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>YOUR NAME | Web Tech | Cert 4 Prog</title>
 
     <link rel="stylesheet" href="assets/css/site.css">
@@ -13,91 +12,107 @@
 
 <body class="bg-[rgb(109,109,109)] text-[rgb(255,208,0)] min-h-screen flex flex-col">
 
-    <header class="bg-[rgb(56,56,56)] sticky top-0 text-white shadow-md z-10">
-        <section class="container mx-auto flex flex-col md:flex-row items-center justify-between p-4">
+<!-- HEADER -->
+<header class="bg-[rgb(56,56,56)] sticky top-0 text-white shadow-md z-10">
 
-            <section class="flex items-center gap-4">
-                <h1 class="text-2xl font-bold">
-                    Final Project
-                </h1>
-            </section>
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between p-4">
 
-            <nav class="bg-[rgb(179,0,0)] mt-4 md:mt-0">
-                <ul class="text-[rgb(255,208,0)] flex gap-4 font-medium p-2">
-                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
-                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
-                    <li><a href="about.html" class="hover:text-white transition">About</a></li>
-                    <li><a href="projects.html" class="hover:text-white transition">Projects</a></li>
-                    <li><a href="mywork.html" class="hover:text-white transition">Sample</a></li>
-                    <li><a href="resume.html" class="hover:text-white transition">Resume</a></li>
-                </ul>
-            </nav>
+        <div class="flex items-center gap-4">
+            <h1 class="text-2xl font-bold">
+                Final Project
+            </h1>
+        </div>
 
-        </section>
-    </header>
+        <nav class="bg-[rgb(179,0,0)] mt-4 md:mt-0">
+            <ul class="text-[rgb(255,208,0)] flex gap-4 font-medium p-2">
+                <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                <li><a href="projects.html" class="hover:text-white transition">Projects</a></li>
+                <li><a href="mywork.html" class="hover:text-white transition">Sample</a></li>
+                <li><a href="resume.html" class="hover:text-white transition">Resume</a></li>
+            </ul>
+        </nav>
 
-    <main class="container mx-auto flex-grow p-6">
+    </div>
 
-        <article class="bg-[rgb(156,156,156)] rounded-xl shadow-md p-8 mb-8">
+</header>
 
-            <header class="mb-6">
-                <h2 class="text-xl font-bold text-[rgb(255,208,0)]">
-                    Home Dashboard
-                </h2>
-                <p class="text-black">
-                    Welcome to my Certificate IV Web Technologies portfolio. This site demonstrates HTML, TailwindCSS,
-                    JavaScript, and responsive design.
-                </p>
-            </header>
+<!-- MAIN -->
+<main class="container mx-auto flex-grow p-6">
 
-            <section class="grid md:grid-cols-3 gap-4">
+    <article class="bg-[rgb(156,156,156)] rounded-xl shadow-md p-8 mb-8">
 
-                <article class="border rounded-lg p-6 shadow-sm hover:shadow-lg transition">
-                    <h3 class="text-xl font-semibold mb-3">Projects</h3>
-                    <p class="text-black mb-3">View my development work and assignments.</p>
-                    <a href="projects.html"
-                        class="inline-block bg-[rgb(179,0,0)] text-white px-4 py-2 rounded hover:bg-[rgb(129,0,0)]">
-                        View Projects
-                    </a>
-                </article>
+        <!-- MAIN HEADING FIX -->
+        <header class="mb-6">
+            <h2 class="text-xl font-bold text-[rgb(255,208,0)]">
+                Home Dashboard
+            </h2>
 
-                <article class="border rounded-lg p-6 shadow-sm hover:shadow-lg transition">
-                    <h3 class="text-xl font-semibold mb-3">About Me</h3>
-                    <p class="text-black mb-3">Learn more about my skills and learning journey.</p>
-                    <a href="about.html"
-                        class="inline-block bg-[rgb(179,0,0)] text-white px-4 py-2 rounded hover:bg-[rgb(129,0,0)]">
-                        About
-                    </a>
-                </article>
+            <p class="text-black">
+                Welcome to my Certificate IV Web Technologies portfolio.
+                This site demonstrates HTML, TailwindCSS, JavaScript, and responsive design.
+            </p>
+        </header>
 
-                <article class="border rounded-lg p-6 shadow-sm hover:shadow-lg transition">
-                    <h3 class="text-xl font-semibold mb-3">Contact</h3>
-                    <p class="text-black mb-3">Send me a message or feedback.</p>
-                    <a href="contact.html"
-                        class="inline-block bg-[rgb(179,0,0)] text-white px-4 py-2 rounded hover:bg-[rgb(129,0,0)]">
-                        Contact
-                    </a>
-                </article>
+        <!-- SECTION 1 -->
+        <div class="grid md:grid-cols-3 gap-4">
 
-            </section>
+            <div class="border rounded-lg p-6 shadow-sm hover:shadow-lg transition">
 
-        </article>
+                <h3 class="text-xl font-semibold mb-3">Projects</h3>
+                <p class="text-black mb-3">View my development work and assignments.</p>
 
-    </main>
+                <a href="projects.html"
+                   class="inline-block bg-[rgb(179,0,0)] text-white px-4 py-2 rounded hover:bg-[rgb(129,0,0)]">
+                    View Projects
+                </a>
 
-    <footer class="bg-[rgb(56,56,56)] text-white mt-auto">
-        <section class="container mx-auto grid gap-6 md:grid-cols-2 p-6">
+            </div>
 
-            <section class="flex items-center gap-4">
-                <p class="text-sm">
-                    © Copyright 2026 Edwin.
-                    All rights reserved.
-                </p>
-            </section>
+            <div class="border rounded-lg p-6 shadow-sm hover:shadow-lg transition">
 
-        </section>
-    </footer>
+                <h3 class="text-xl font-semibold mb-3">About Me</h3>
+                <p class="text-black mb-3">Learn more about my skills and learning journey.</p>
+
+                <a href="about.html"
+                   class="inline-block bg-[rgb(179,0,0)] text-white px-4 py-2 rounded hover:bg-[rgb(129,0,0)]">
+                    About
+                </a>
+
+            </div>
+
+            <div class="border rounded-lg p-6 shadow-sm hover:shadow-lg transition">
+
+                <h3 class="text-xl font-semibold mb-3">Contact</h3>
+                <p class="text-black mb-3">Send me a message or feedback.</p>
+
+                <a href="contact.html"
+                   class="inline-block bg-[rgb(179,0,0)] text-white px-4 py-2 rounded hover:bg-[rgb(129,0,0)]">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-[rgb(56,56,56)] text-white mt-auto">
+
+    <div class="container mx-auto p-6">
+
+        <p class="text-sm">
+            © Copyright 2026 Edwin.
+            All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
 
 </body>
-
 </html>
