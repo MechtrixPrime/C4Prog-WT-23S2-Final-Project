@@ -13,121 +13,119 @@
 
 <body class="bg-[rgb(109,109,109)] text-[rgb(255,208,0)] min-h-screen flex flex-col">
 
-<!-- HEADER -->
-<header class="bg-[rgb(56,56,56)] sticky top-0 text-white shadow-md z-10">
+    <!-- HEADER -->
+    <header class="bg-[rgb(56,56,56)] sticky top-0 text-white shadow-md z-10">
 
-    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between p-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between p-4">
 
-        <h1 class="text-2xl font-bold">
-            Final Project
-        </h1>
+            <h1 class="text-2xl font-bold">
+                Final Project
+            </h1>
 
-        <nav class="bg-[rgb(179,0,0)] mt-4 md:mt-0">
-            <ul class="text-[rgb(255,208,0)] flex gap-4 font-medium p-2">
-                <li><a href="index.html" class="hover:text-white">Home</a></li>
-                <li><a href="contact.html" class="hover:text-white">Contact</a></li>
-                <li><a href="about.html" class="hover:text-white">About</a></li>
-                <li><a href="projects.html" class="hover:text-white">Projects</a></li>
-                <li><a href="mywork.html" class="hover:text-white">Sample</a></li>
-                <li><a href="resume.html" class="hover:text-white">Resume</a></li>
-            </ul>
-        </nav>
+            <nav class="bg-[rgb(179,0,0)] mt-4 md:mt-0">
+                <ul class="text-[rgb(255,208,0)] flex gap-4 font-medium p-2">
+                    <li><a href="index.html" class="hover:text-white">Home</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                    <li><a href="about.html" class="hover:text-white">About</a></li>
+                    <li><a href="projects.html" class="hover:text-white">Projects</a></li>
+                    <li><a href="mywork.html" class="hover:text-white">Sample</a></li>
+                    <li><a href="resume.html" class="hover:text-white">Resume</a></li>
+                </ul>
+            </nav>
 
-    </div>
+        </div>
 
-</header>
+    </header>
 
-<!-- MAIN -->
-<main class="container mx-auto flex-grow p-6">
+    <!-- MAIN -->
+    <main class="container mx-auto flex-grow p-6">
 
-    <section class="bg-[rgb(156,156,156)] rounded-xl shadow-md p-8">
+        <section class="bg-[rgb(156,156,156)] rounded-xl shadow-md p-8">
 
-        <!-- PAGE HEADING FIX -->
-        <header class="mb-6">
+            <!-- PAGE HEADING FIX -->
+            <header class="mb-6">
 
-            <h2 class="text-xl font-bold text-[rgb(255,208,0)]">
-                Contact Me
-            </h2>
+                <h2 class="text-xl font-bold text-[rgb(255,208,0)]">
+                    Contact Me
+                </h2>
 
-            <p class="text-black">
-                Send a message using the form below. All fields are validated using JavaScript.
-            </p>
+                <p class="text-black">
+                    Send a message using the form below. All fields are validated using JavaScript.
+                </p>
 
-        </header>
+            </header>
 
-        <!-- CONTACT FORM -->
-        <section aria-label="Contact form section">
+            <!-- CONTACT FORM -->
+            <section aria-label="Contact form section">
 
-            <form id="contact-form" class="space-y-4">
+                <form id="contact-form" class="space-y-4">
 
-                <!-- NAME -->
-                <div>
-                    <label for="name" class="block text-black mb-1">
-                        Name
-                    </label>
+                    <!-- NAME -->
+                    <div>
+                        <label for="name" class="block text-black mb-1">
+                            Name
+                        </label>
 
-                    <input type="text"
-                           id="name"
-                           class="w-full p-2 border rounded text-black"
-                           placeholder="Enter your name">
-                </div>
+                        <input type="text" id="name" class="w-full p-2 border rounded text-black"
+                            placeholder="Enter your name">
+                        <p id="nameError" class="text-red-600 text-sm"></p>
+                    </div>
 
-                <!-- EMAIL -->
-                <div>
-                    <label for="email" class="block text-black mb-1">
-                        Email
-                    </label>
+                    <!-- EMAIL -->
+                    <div>
+                        <label for="email" class="block text-black mb-1">
+                            Email
+                        </label>
 
-                    <input type="email"
-                           id="email"
-                           class="w-full p-2 border rounded text-black"
-                           placeholder="Enter your email">
-                </div>
+                        <input type="email" id="email" class="w-full p-2 border rounded text-black"
+                            placeholder="Enter your email">
+                        <p id="emailError" class="text-red-600 text-sm"></p>
+                    </div>
 
-                <!-- MESSAGE -->
-                <div>
-                    <label for="message" class="block text-black mb-1">
-                        Message
-                    </label>
+                    <!-- MESSAGE -->
+                    <div>
+                        <label for="message" class="block text-black mb-1">
+                            Message
+                        </label>
 
-                    <textarea id="message"
-                              class="w-full p-2 border rounded text-black"
-                              rows="5"
-                              placeholder="Write your message"></textarea>
-                </div>
+                        <textarea id="message" class="w-full p-2 border rounded text-black" rows="5"
+                            placeholder="Write your message"></textarea>
+                        <p id="messageError" class="text-red-600 text-sm"></p>
+                    </div>
 
-                <!-- BUTTON -->
-                <div>
-                    <button type="submit"
+                    <!-- BUTTON -->
+                    <div>
+                        <button type="submit"
                             class="bg-[rgb(179,0,0)] text-white px-4 py-2 rounded hover:bg-[rgb(129,0,0)]">
-                        Send Message
-                    </button>
-                </div>
+                            Send Message
+                        </button>
+                    </div>
 
-                <!-- OUTPUT -->
-                <div id="form-output" class="text-black font-semibold"></div>
+                    <!-- OUTPUT -->
+                    <div id="form-output" class="text-black font-semibold"></div>
 
-            </form>
+                </form>
+
+            </section>
 
         </section>
 
-    </section>
+    </main>
 
-</main>
+    <!-- FOOTER -->
+    <footer class="bg-[rgb(56,56,56)] text-white mt-auto">
 
-<!-- FOOTER -->
-<footer class="bg-[rgb(56,56,56)] text-white mt-auto">
+        <div class="container mx-auto p-6">
 
-    <div class="container mx-auto p-6">
+            <p class="text-sm">
+                © Copyright 2026 Edwin.
+                All rights reserved.
+            </p>
 
-        <p class="text-sm">
-            © Copyright 2026 Edwin.
-            All rights reserved.
-        </p>
+        </div>
 
-    </div>
-
-</footer>
+    </footer>
 
 </body>
+
 </html>
